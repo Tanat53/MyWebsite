@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>พอร์ตฟอลิโอของฉัน</title>
+  <style>
+    :root {
+      --primary: #3674B5;
+      --secondary: #578FCA;
+      --accent: #FADA7A;
+      --light-bg: #F5F0CD;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url('background-869586_1920.png');
+      background-size: cover; /* หรือ 'contain' หรือ 'auto' ตามลักษณะภาพ */
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2.5rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background 0.4s ease;
+      border-bottom: 4px solid var(--accent);
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+      padding: 0.5rem 0.75rem;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      color: white;
+      background-color: var(--secondary);
+      transform: translateY(-2px);
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      margin-top: 2rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 2px solid var(--accent);
+    }
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+    section h2 {
+      color: var(--primary);
+      border-left: 5px solid var(--accent);
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      border-top: 4px solid var(--accent);
+      transition: background 0.4s ease;
+    }
+    .portfolio-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1.5rem;
+         justify-content: center;
+    }
+
+    .portfolio-button {
+        display: inline-block;
+         padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: white;
+        background-color: var(--primary);
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        transition: background-color 0.3s ease, transform 0.2s;
+        min-width: 200px;
+         text-align: center;
+    }
+
+    .portfolio-button:hover {
+        background-color: var(--secondary);
+        transform: translateY(-2px);
+    }
+     #portfolio {
+        text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>สวัดดีนผู้ชมและคณะกรรมการทุกท่านครับ😘</h1>
+    <h2>นี่คือเว็บไซต์ที่ <span class="highlight-name">นายธนัตถ์ มีมาก</span> จัดทำขึ้นเพื่อสะสมผลงานต่างๆ</h2>
+    <nav>
+      <a href="#about">เกี่ยวกับฉัน</a>
+      <a href="#portfolio">ผลงาน</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>เกี่ยวกับฉัน</h2>
+    <p>แนะนำตัวโดยย่อ เช่น อายุ การศึกษา ความถนัด ความสนใจ</p>
+  </section>
+
+  <section id="portfolio">
+  <h2>ผลงาน</h2>
+  <p>คลิกปุ่มด้านล่างเพื่อเลือกชมผลงาน</p>
+  <div class="portfolio-buttons">
+    <a href="portfolio.html" class="portfolio-button">ผลงานทั้งหมด</a>
+    <a href="competition.html" class="portfolio-button">ผลงานจากการแข่งขัน</a>
+    <a href="https://drive.google.com/drive/folders/1wPR246CbBHSWJXt6bJeEN-ILaXoAk96-?usp=drive_link" target="_blank" class="portfolio-button">Google Drive</a>
+    </div>
+    </section>
+
+  <section id="contact">
+    <h2>ติดต่อ</h2>
+    <p>อีเมล: your@email.com</p>
+    <p>เบอร์โทร: 08x-xxx-xxxx</p>
+    <p>Line / IG / Facebook: [ใส่ลิงก์]</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 [ชื่อของคุณ] พอร์ตฟอลิโอ</p>
+  </footer>
+</body>
+</html>
